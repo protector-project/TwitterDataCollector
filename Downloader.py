@@ -32,6 +32,8 @@ def download_tweets(start_date, end_date, lang_code, BEARER_TOKEN, topic, catego
         # The method expansions.flatten allows us to get all the information in a single JSON
         result = expansions.flatten(page)
 
-        for tweet in result:
-            # Print the full tweet object JSON to the console
-            print(json.dumps(tweet))
+        # for tweet in result:
+        #     # Print the full tweet object JSON to the console
+        #     print(json.dumps(tweet))
+
+        return result
